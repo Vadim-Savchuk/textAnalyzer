@@ -1,0 +1,160 @@
+body {
+    background-color: black;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    color: green;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 100%;
+    }
+
+    .offer{
+        flex-direction: column;
+    }
+
+    .button-analysis{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    .checkbox-offer{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .box{
+        width: 100%;
+    }
+}
+
+/* Аналізатор тексту */
+
+.field {
+    margin: 70px auto 0px;
+}
+
+.offer {
+    display: flex;
+}
+
+button {
+    width: auto;
+    color: green;
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 30px;
+    padding: 20px 40px;
+    background: transparent;
+    border: 2px solid green;
+}
+
+button:hover{
+    opacity: 0.5;
+    color: black;
+    background-color: green;
+}
+
+.textarea {
+    width: 100%;
+    resize: none;
+    height: 300px;
+    padding: 20px;
+    color: green;
+    font-size: 20px;
+    background: transparent;
+    border: 2px solid green;
+}
+
+.textarea::placeholder {
+    color: green;
+}
+
+/* Чекбокси */
+
+.checkbox-offer {
+    gap: 20px;
+    display: flex;
+    margin-top: 30px;
+    padding: 20px 30px;
+    text-align: center;
+    border: 2px solid green;
+    justify-content: space-between;
+}
+
+.box {
+    gap: 10px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box label {
+    font-size: 20px;
+}
+
+.checkbox {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+}
+
+.castom-checkbox {
+    width: 35px;
+    height: 30px;
+    display: block;
+    cursor: pointer;
+    margin: 10px auto 0px;
+    border: 2px solid green;
+}
+
+.castom-checkbox:hover {
+    opacity: 0.5;
+    background-color: green;
+}
+
+.checkbox:checked+.castom-checkbox {
+    background-color: green;
+}
+
+/* Результат */
+
+.result {
+    width: 100%;
+    height: auto;
+    font-size: 22px;
+    margin-top: 30px;
+    line-height: 30px;
+    min-height: 150px;
+    padding: 20px 30px;
+    border: 2px solid green;
+}
+
+.statistics {
+    font-size: 22px;
+    margin-top: 30px;
+    line-height: 30px;
+    padding: 20px 30px;
+    border: 2px solid green;
+}
+
+.translit-offer, .result-stats{
+    display: none;
+    overflow: auto;
+}
+
+.translit-offer{
+    max-height: 600px;
+}
+
+.active{
+    display: block;
+}

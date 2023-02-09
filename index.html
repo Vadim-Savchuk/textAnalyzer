@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аналізатор тексту</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/9584/9584623.png"/>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="field">
+            
+            <div class="offer">
+                <textarea class="textarea" placeholder="..."></textarea>
+                <button class="button-analysis">Аналізувати</button>
+            </div>
+
+            <div class="checkbox-offer">
+
+                <div class="box">
+                    <label for="symbols">
+                        Кількість символів
+                        <input type="checkbox" id="symbols" class="checked-symbols checkbox">
+                        <span class="castom-checkbox"></span>
+                    </label>
+                </div>
+
+                <div class="box">
+                    <label for="no-spaces">
+                        Кількість символів без пробілів
+                        <input type="checkbox" id="no-spaces" class="checked-no-spaces checkbox">
+                        <span class="castom-checkbox"></span>
+                    </label>
+                </div>
+
+                <div class="box">
+                    <label for="statistics">
+                        Статистика символів
+                        <input type="checkbox" id="statistics" class="checked-statistics checkbox">
+                        <span class="castom-checkbox"></span>
+                    </label>
+                </div>
+
+                <div class="box">
+                    <label for="transl">
+                        Транслітерація символів
+                        <input type="checkbox" id="transl" class="checked-trans checkbox">
+                        <span class="castom-checkbox"></span>
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="result">
+                <h5>Результат: </h5>
+                <div>
+                    <p class="length-w"></p>
+                    <p class="length-s"></p>
+                    <p class="length-n"></p>
+                </div>
+            </div>
+
+            <div class="translit-offer statistics">
+                <h4>Результат транслітерації:</h4>
+                <p class="traslit-result"></p>
+            </div>
+
+            <div class="result-stats statistics">
+                <h4>Статистика символів:</h4>
+                <ul class="list">
+
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
